@@ -7,9 +7,9 @@ require_once("config.php");
 echo json_encode($usuarios);*/
 
 //Carrega um Usuário
-$usuario = new Usuario();
-$usuario->loadById(2);
-echo $usuario;
+//$usuario = new Usuario();
+//$usuario->loadById(7);
+//echo $usuario;
 
 
 //Carrega uma lista de usuários
@@ -25,4 +25,8 @@ echo $usuario;
 //$usuario = new Usuario();
 //$usuario->login("root", "!@#$");
 //echo $usuario;
+
+$aluno = new Usuario("aluno", "@lun05");
+$aluno->insert();
+echo $aluno;
 ?>
