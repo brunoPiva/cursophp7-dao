@@ -27,9 +27,13 @@ echo json_encode($usuarios);*/
 //echo $usuario;
 
 //Criando novo usuario
-//$aluno = new Usuario("aluno", "@lun05");
+//$aluno = new Usuario("novo aluno", "@lun05s");
 //$aluno->insert();
 //echo $aluno;
 
-
+//Atualizando 
+$usuario = new Usuario();
+$usuario->loadById(13);
+$usuario->update("professor", "pr0f3ss0r");
+echo $usuario;
 ?>
